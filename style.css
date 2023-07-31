@@ -64,7 +64,9 @@ img {
    }
 
    .apresentacao__links__link {
-    /* background-color: #00940f; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
     width: 250px;
     height: 25px;
     text-align: center;
@@ -77,5 +79,35 @@ img {
     color: #ffffff;
     font-family:'Montserrat', sans-serif;
     
+   }
+
+   .apresentacao__links__link {
+    background-image:url(./assets/sangue.png);
+    background-size: 90%;
+   }
+
+   .apresentacao__links__link:hover {
+    background-color: #fd222241;
+   }
+
+   .warwickBotao {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    padding: 10px 20px;
+    font-size: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     
+
+
+    background-color: black;
+    color: #fd2222;
+
    }

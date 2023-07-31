@@ -7,25 +7,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <audio autoplay loop>
+
+    <button class="warwickBotao" id="warwickBotao">Clique para saber tudo sobre o Warwick</button>
+
+    <audio id="warwickAudio" loop>
         <source src="Warwick_theme.mp3" type="audio/mpeg">
     </audio>
-    <main Class="apresentacao">
+    <main Class="apresentacao" id="conteudo" style="display: none;">
         <section class="apresentacao__conteudo">
             <h1 class="apresentacao__conteudo__titulo">As Correntes se quebraram, <strong class="título-destaque"> A CRIATURA ESTA LIVRE !!</strong></h1>
             <img src="./assets/Warwick_main.png">
             <p class="apresentacao__conteudo__texto">El lobo siempre cuida a su loba, AUUUUUUUUUUUUUUUU</p>
             <div class="apresentacao__links">
                 <h2 class="apresentacao__links__subtitulo">Acesse para saber mais:</h2>
-                <a class="apresentacao__links__link" href="https://www.leagueoflegends.com/pt-br/champions/warwick/"target="_blank">
+                <a class="apresentacao__links__link" href="https://www.leagueoflegends.com/pt-br/champions/warwick/" target="_blank">
                     <img src="./assets/Icone1.png">
                     Sobre Warwick
                 </a>
-                <a class="apresentacao__links__link" href="https://lolalytics.com/lol/warwick/build/"target="_blank">
+                <a class="apresentacao__links__link" href="https://lolalytics.com/lol/warwick/build/" target="_blank">
                     <img src="./assets/Icone2.png">
-                    Warwick Build</a>             
+                    Warwick Build
+                </a>             
             </div>
         </section>   
     </main>
+
+    <script>
+        document.getElementById('warwickBotao').addEventListener('click', function() {
+            var botaoWarwick = document.getElementById('warwickBotao');
+            botaoWarwick.style.display = 'none';
+
+            var conteudoElemento = document.getElementById('conteudo');
+            if (conteudoElemento.style.display === 'none') {
+                conteudoElemento.style.display = 'block';
+            } else {
+                conteudoElemento.style.display = 'none';
+            }
+
+            var audio = document.getElementById('warwickAudio');
+            audio.volume = 0.5;
+            audio.play();
+        });
+    </script>
 </body>
 </html>
