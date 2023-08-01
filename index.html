@@ -11,7 +11,10 @@
     <button class="warwickBotao" id="warwickBotao">Clique para saber tudo sobre o Warwick</button>
 
     <audio id="warwickAudio" loop>
-        <source src="Warwick_theme.mp3" type="audio/mpeg">
+        <source src="./assets/Warwick_theme.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="warwickAudio_2">
+        <source src="./assets/as_correntes.mp3" type="audio/mpeg">
     </audio>
     <main Class="apresentacao" id="conteudo" style="display: none;">
         <section class="apresentacao__conteudo">
@@ -44,9 +47,15 @@
                 conteudoElemento.style.display = 'none';
             }
 
+            var audio_2 = document.getElementById('warwickAudio_2');
+            audio_2.volume = 0.5;
+            audio_2.play();
+
             var audio = document.getElementById('warwickAudio');
-            audio.volume = 0.5;
+            audio.volume = 0.2;
             audio.play();
+
+
         });
     </script>
 </body>
