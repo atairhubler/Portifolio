@@ -3,28 +3,23 @@
 
 
 
-*{
-    margin: 0;
-    padding: 0;
+
+  
 
     
 
     
-}
+
 
 body {
-    height: 100vh;
+    /* height: 100vh; */
     box-sizing: border-box;
     background-color: black;
     color: rgba(255, 7, 185, 0.558);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-
-
-    
+    padding: 0%;    
 }
 
 .título-destaque {
@@ -32,7 +27,7 @@ body {
 }
 
 .apresentacao{
-    margin:10%;
+    /* margin:10%; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,7 +100,7 @@ img {
    }
 
    .warwickBotao {
-    margin: 0;
+    padding: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,6 +120,26 @@ img {
     color: #fd2222;
 
    }
+
+
+   .rodape {
+      padding: 24px;
+      color: #ffffff;
+      background-color:#fd2222;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+   }
+
+
+
+
+
+
+
+
+
 
    @media (max-width: 600px) {
     .apresentacao {
