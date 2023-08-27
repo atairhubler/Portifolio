@@ -160,38 +160,37 @@ img {
 
 
 
-
-   @media (max-width: 600px) {
+   @media (min-width: 601px) {
+    /* Styles for screens larger than 600px (computer screens) */
     .apresentacao {
-      margin: 5%;
+        margin: 0;
     }
     .apresentacao__conteudo {
-      width: 90%;
+        width: 800px;
     }
     .apresentacao__conteudo__titulo {
-      font-size: 28px;
+        font-size: 36px;
     }
     .apresentacao__conteudo__texto {
-      font-size: 18px;
+        font-size: 24px;
     }
     .apresentacao__links__subtitulo {
-      font-size: 20px;
+        font-size: 24px;
     }
     .apresentacao__links__link {
-      font-size: 20px;
+        font-size: 24px;
     }
-
-
-
     .cabecalho {
-      margin: 5%;
+        padding: 2% 10% 50% 1%;
     }
     .cabecalho__menu {
-      width: 90%;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
     }
     .cabecalho__menu__link {
-      font-size: 20px;
+        font-size: 24px;
     }
 
 
   }
+  ...
