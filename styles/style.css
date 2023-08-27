@@ -51,19 +51,21 @@ body {
 
 
 .cabecalho {
-  padding: 2% 10% 1% 1%;
+  padding: 2% 5% 1% 5%;
   
 }
 
 .cabecalho__menu {
   display:flex ;
-  gap: 25px;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
 
 }
 
 .cabecalho__menu__link {
     font-family:var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
@@ -104,14 +106,15 @@ img {
     display: flex;
     justify-content: center;
     gap: 16px;
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
     height: 25px;
     text-align: center;
     border-radius: 8px;
     border: 2px solid var(--cor-secundaria);
     font-size: 24px;
     font-weight: 600;
-    padding: 15px 0;
+    padding: 10px 0;
     text-decoration: none;
     color: #ffffff;
     font-family:var(--fonte-secundaria);
@@ -128,7 +131,8 @@ img {
    }
 
    .warwickBotao {
-    padding: 5%;
+    padding: 5% 10px;
+    font-size: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,12 +155,12 @@ img {
 
 
    .rodape {
-      padding: 24px;
+      padding: 16px;
       color: #ffffff;
       background-color:var(--cor-primaria);
       text-align: center;
       font-family: var(--fonte-secundaria);
-      font-size: 24px;
+      font-size: 18px;
       font-weight: 400;
    }
 
@@ -183,18 +187,6 @@ img {
     .apresentacao__links__link {
       font-size: 20px;
     }
-
-    .cabecalho {
-        padding: 2% 10% 50% 1%;
-    }
-    .cabecalho__menu {
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-    }
-    .cabecalho__menu__link {
-        font-size: 24px;
-    }
-
 
   }
   ...
