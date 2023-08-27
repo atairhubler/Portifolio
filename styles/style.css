@@ -184,6 +184,17 @@ img {
       font-size: 20px;
     }
 
+    .cabecalho {
+        padding: 2% 10% 50% 1%;
+    }
+    .cabecalho__menu {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .cabecalho__menu__link {
+        font-size: 24px;
+    }
+
 
   }
   ...
