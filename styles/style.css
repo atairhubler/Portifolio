@@ -180,4 +180,18 @@ img {
     .apresentacao__links__link {
       font-size: 20px;
     }
+
+
+
+    .cabecalho {
+      margin: 5%;
+    }
+    .cabecalho__menu {
+      width: 90%;
+    }
+    .cabecalho__menu__link {
+      font-size: 20px;
+    }
+
+
   }
