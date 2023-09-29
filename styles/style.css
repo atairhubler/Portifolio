@@ -26,7 +26,7 @@
 /* Estilos para o vídeo de fundo em telas menores (celulares) */
 @media screen and (max-width: 767px) {
   #video-bg {
-      position: relative; /* Altera o posicionamento para relativo */
+      position: fixed; /* Altera o posicionamento para relativo */
       width: 100%; /* Define uma largura fixa ou percentual para o vídeo */
       height: auto; /* Permite que a altura se ajuste automaticamente */
       z-index: -1;
@@ -39,6 +39,8 @@
 .video-warwick {
   position: relative;
   overflow: hidden;
+ 
+
 }
 
 .content {
@@ -46,6 +48,7 @@
   z-index: 1;
   text-align: center; /* Ajuste o alinhamento conforme necessário */
   padding: 20px;
+  background-color: rgba(4, 62, 8, 0.438);
 }
 
 
@@ -89,6 +92,8 @@ body {
 .apresentacao__conteudo__titulo {
     font-size:36px;
     font-family:var(--fonte-primaria);
+    text-shadow: 3px 4px 4px rgba(0, 0, 0, 90);
+    
 }
 
 
@@ -119,8 +124,11 @@ body {
 
 
 .apresentacao__conteudo__texto {
-    font-size:24px;
-    font-family:var(--fonte-secundaria);
+    font-size: 24px;
+    font-weight: 800;
+    font-family:var(--fonte-primaria);
+    color:#fd2222
+    
     
     
 }
@@ -129,6 +137,8 @@ body {
     font-family:var(--fonte-primaria);
     font-weight: 400;
     font-size: 24px;
+    text-shadow: 3px 4px 4px rgba(0, 0, 0, 90);
+    
 }
 
 .apresentacao__links {
@@ -136,6 +146,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content:space-between;
+    
     gap: 32px;
 }
 
@@ -199,7 +210,6 @@ img {
    .rodape {
       padding: 16px;
       color: #ffffff;
-      background-color:var(--cor-primaria);
       text-align: center;
       font-family: var(--fonte-secundaria);
       font-size: 18px;
