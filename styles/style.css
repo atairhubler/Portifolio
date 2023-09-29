@@ -18,6 +18,7 @@
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
+  
 
 }
 
@@ -39,7 +40,7 @@
 .video-warwick {
   position: relative;
   overflow: hidden;
- 
+  
 
 }
 
@@ -48,6 +49,7 @@
   z-index: 1;
   text-align: center; /* Ajuste o alinhamento conforme necessário */
   padding: 20px;
+  
  
 }
 
@@ -175,7 +177,8 @@ img {
     text-decoration: none;
     color: #ffffff;
     font-family:var(--fonte-secundaria);
-    
+    background-color: rgba(255, 0, 0, 0.4);
+
    }
 
    .apresentacao__links__link {
