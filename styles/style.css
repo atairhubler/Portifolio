@@ -11,6 +11,48 @@
 }
 
 
+#video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+
+}
+
+
+
+/* Estilos para o vídeo de fundo em telas menores (celulares) */
+@media screen and (max-width: 767px) {
+  #video-bg {
+      position: relative; /* Altera o posicionamento para relativo */
+      width: 100%; /* Define uma largura fixa ou percentual para o vídeo */
+      height: auto; /* Permite que a altura se ajuste automaticamente */
+      z-index: -1;
+  }
+
+  /* Adicione outros estilos para o conteúdo em telas menores, se necessário */
+}
+
+
+.video-warwick {
+  position: relative;
+  overflow: hidden;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center; /* Ajuste o alinhamento conforme necessário */
+  padding: 20px;
+}
+
+
+
+
+
+
 
 body {
     /* height: 100vh; */
