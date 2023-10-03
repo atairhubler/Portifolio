@@ -31,7 +31,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.4); /* Cor preta com 50% de opacidade */
+  background-color: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de opacidade */
   z-index: 1; /* Certifique-se de que a camada escura esteja acima do vídeo */
 }
 
@@ -192,7 +192,7 @@ img {
     text-decoration: none;
     color: #ffffff;
     font-family:var(--fonte-secundaria);
-    background-color: rgba(255, 0, 0, 0.4);
+    background-color: rgba(255, 0, 0, 0.6);
 
    }
 
@@ -230,7 +230,7 @@ img {
 
 
    .rodape {
-      padding: 16px;
+      padding: 400px 16px 16px 16px;
       color: #ffffff;
       text-align: center;
       font-family: var(--fonte-secundaria);
@@ -260,6 +260,9 @@ img {
     }
     .apresentacao__links__link {
       font-size: 20px;
+    }
+    .rodape {
+      padding: 5%;
     }
 
   }
