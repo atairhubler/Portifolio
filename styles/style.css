@@ -32,7 +32,7 @@
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de opacidade */
-  z-index: 1; /* Certifique-se de que a camada escura esteja acima do vídeo */
+  z-index: -1; /* Certifique-se de que a camada escura esteja acima do vídeo */
 }
 
 
@@ -48,7 +48,6 @@
       height: auto; /* Permite que a altura se ajuste automaticamente */
       z-index: -1;
   }
-
   /* Adicione outros estilos para o conteúdo em telas menores, se necessário */
 }
 
@@ -56,26 +55,19 @@
 .video-warwick {
   position: relative;
   overflow: hidden;
-  
 }
+
 
 .content {
   position: relative;
   z-index: 3;
   text-align: center; /* Ajuste o alinhamento conforme necessário */
   padding: 20px;
-  
- 
 }
 
 
 
-
-
-
-
 body {
-    /* height: 100vh; */
     box-sizing: border-box;
     background-color: var(--cor-primaria);
     color:var(--cor-quaternario);
@@ -83,7 +75,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0%;    
+    padding: 0%;
 }
 
 
@@ -212,30 +204,32 @@ img {
     justify-content: center;
     align-items: center;
     height: 100vh;
-
-    padding: 10px 20px;
-    font-size: 80px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    
-
-
+    z-index: 1;
     background-color: var(--cor-primaria);
-    color:var(--cor-secundaria);
+    color: var(--cor-secundaria);
+    background-image: url(.assets/laboratorio.jpg);
+    background-size: cover;
+    background-position: center;
 
    }
 
 
    .rodape {
-      padding: 400px 16px 16px 16px;
+      position: fixed;
+      padding-bottom: 1%;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 480px 0px 0px 0px;
       color: #ffffff;
       text-align: center;
       font-family: var(--fonte-secundaria);
-      font-size: 18px;
-      font-weight: 400;
+      font-size: 14px;
+      font-weight: 200; 
+      
    }
 
 
@@ -262,7 +256,7 @@ img {
       font-size: 20px;
     }
     .rodape {
-      padding: 5%;
+      padding: 30%;
     }
 
   }
