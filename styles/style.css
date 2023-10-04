@@ -31,7 +31,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de opacidade */
+  background-color: rgba(0, 0, 0, 0.7); /* Cor preta com 50% de opacidade */
   z-index: -1; /* Certifique-se de que a camada escura esteja acima do vídeo */
 }
 
@@ -50,6 +50,7 @@
   }
   /* Adicione outros estilos para o conteúdo em telas menores, se necessário */
 }
+
 
 
 .video-warwick {
@@ -85,7 +86,6 @@ body {
 }
 
 .apresentacao{
-    /* margin:10%; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -95,7 +95,7 @@ body {
     width: 615px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 200px;
 }
 
 .apresentacao__conteudo__titulo {
@@ -160,7 +160,7 @@ body {
     align-items: center;
     justify-content:space-between;
     
-    gap: 32px;
+    gap: 40px;
 }
 
 img {
@@ -184,34 +184,30 @@ img {
     text-decoration: none;
     color: #ffffff;
     font-family:var(--fonte-secundaria);
-    background-color: rgba(255, 0, 0, 0.6);
+    background-color: rgb(255, 3, 3, 0.7);
 
    }
 
-   .apresentacao__links__link {
-    background-image:url(./assets/sangue.png);
-    background-size: 90%;
-   }
 
    .apresentacao__links__link:hover {
     background-color: #fd222241;
    }
 
    .warwickBotao {
+    position: fixed;
     padding: 5% 10px;
-    font-size: 40px;
+    font-size: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1;
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
-    background-image: url(.assets/laboratorio.jpg);
+    background-image: url('../assets/laboratorio.jpg');
     background-size: cover;
     background-position: center;
 
@@ -222,18 +218,14 @@ img {
       position: fixed;
       padding-bottom: 1%;
       left: 50%;
+      top: 96%;
       transform: translateX(-50%);
-      padding: 480px 0px 0px 0px;
       color: #ffffff;
       text-align: center;
       font-family: var(--fonte-secundaria);
       font-size: 14px;
-      font-weight: 200; 
-      
+      font-weight: 200;   
    }
-
-
-
 
 
    @media (max-width: 600px) {
@@ -255,9 +247,6 @@ img {
     .apresentacao__links__link {
       font-size: 20px;
     }
-    .rodape {
-      padding: 30%;
-    }
-
   }
   
+
