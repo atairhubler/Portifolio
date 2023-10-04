@@ -31,7 +31,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de opacidade */
+  background-color: rgba(0, 0, 0, 0.4); /* Cor preta com 50% de opacidade */
   z-index: -1; /* Certifique-se de que a camada escura esteja acima do vídeo */
 }
 
@@ -197,6 +197,8 @@ img {
     position: fixed;
     padding: 5% 10px;
     font-size: 50px;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -210,7 +212,6 @@ img {
     background-image: url('../assets/laboratorio.jpg');
     background-size: cover;
     background-position: center;
-
    }
 
 
